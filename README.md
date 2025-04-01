@@ -1,4 +1,4 @@
-## 2025-01-04, 4:00;
+# ADK CanSat RaspBerry Pi 5 Ground Station Software
  
 Developed by - [@szg1](https://www.github.com/szg1) 
 ### [virtualserial.py](virtualserial.py)
