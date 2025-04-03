@@ -60,10 +60,17 @@ def read_vuart_string():
         received_data += c
     return received_data
 
-try:
-    print("Waiting for virtual UART data...")
-    while True:
-        received_message = read_vuart_string()
-        print("Received:", received_message)
-finally:
-    print("Finished")
+def print_received():
+    received_message = read_vuart_string()
+    print("Received:", received_message)
+
+def main():
+    try:
+        print("Waiting for virtual UART data...")
+        while True:
+            print_received()
+    finally:
+        print("Finished")
+
+if __name__ == "__main__":
+    main()
